@@ -384,7 +384,7 @@ processData(49)
     console.error(`Error : , ${error.message}` )
 })
 
-
+// Q14
 function fetchDataPromise(){
     return new Promise((resolve , reject)=>{
         setTimeout(() => {
@@ -403,3 +403,36 @@ fetchDataPromise()
 .catch((error) =>{
     console.error(`Error:, ${error}`);
 })
+
+
+// Q15
+function executeTask(task){
+    function nextTask( index){
+        if(index >= task.length){
+            return;
+        }
+        task[index](() => nextTask(index + 1));
+
+    }
+    nextTask(0);
+
+}
+
+const data1 = (callback) =>{
+    console.log("Data 1");
+    setTimeout(callback, 1000);
+
+}
+
+const data2 = (callback) =>{
+    console.log("Data 2");
+    setTimeout(callback, 1000);
+
+}
+
+const data3 = (callback) =>{
+    console.log("Data 3");
+    setTimeout(callback, 1000);
+
+}
+console.log(executeTask([data1 , data2, data3]));
