@@ -192,7 +192,6 @@ promise
 console.log(message);
 })
 
-// // Q7
 //
 // // Q7
 // const date1 = (message) =>{
