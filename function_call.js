@@ -275,3 +275,21 @@ let arrayNumber2 =  ['shift', 'splice', 'filter', 'pop'];
 let shifted = removeFirstElement(arrayNumber2);
 console.log(shifted);
 console.log(arrayNumber2);
+
+
+// Q26
+const album = {
+    title :" Midnights",
+    artist: "Taylor Swift ",
+    track : ['Maroon', 'Anti-Hero', 'Snow On The Beach', 'You Are On Your Own Kids' , ' Midnight Rain', 'Question...?' , 'Vigilante Shit'],
+    
+
+}
+function getTrackCount(album){
+    return album.track.length;
+}
+
+const trackCount = getTrackCount (album);
+console.log(album.title);
+console.log(album.artist);
+console.log(album.track);
