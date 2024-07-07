@@ -254,3 +254,24 @@ const stringName = "Hello it's me john";
 const character= " ! ";
 let resultName = endsWith(stringName, character) ;
 console.log (resultName);
+
+
+// Q24
+
+function divide(a, b){
+    return a /b ;
+}
+const num4 = 20;
+const num5 = 5;
+const divideNumber = divide(num4, num5);
+console.log(divideNumber); 
+
+
+// Q25
+function removeFirstElement(arr3){
+    return arr3.shift()
+}
+let arrayNumber2 =  ['shift', 'splice', 'filter', 'pop'];
+let shifted = removeFirstElement(arrayNumber2);
+console.log(shifted);
+console.log(arrayNumber2);
