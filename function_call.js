@@ -293,3 +293,47 @@ const trackCount = getTrackCount (album);
 console.log(album.title);
 console.log(album.artist);
 console.log(album.track);
+
+// Q27
+function starWith(str, chr) {
+    return str.charAt(str.length - 1) === chr
+    }   
+    const strName = "Hello it's me john";
+    const char= " H ";
+    let strResult = starWith(stringName, character) ;
+    console.log (strResult);
+
+// Q28
+function isPositive(num6){
+    return num6 > 0;
+}
+
+const positiveNumber = 9;
+const positiveResult = isPositive(positiveNumber);
+console.log(positiveResult);
+
+// Q29
+
+function  countElement(arr4){
+    return arr.length;
+}
+const myArray = [1 ,3 , 5, 7, 9 , 11, 13 , 15 , 17 ,19];
+const elementCount = countElement(myArray);
+console.log(elementCount);
+console.log(myArray) 
+
+
+const game= {
+    name : 'PUBG',
+    genre : 'Battle royal',
+    platforms : ['Steam ' , 'Kakao', 'Xbox', 'PlayStation', 'stadia']
+}
+
+function getPlatformsList(gameObj){
+    return gameObj.platforms;
+
+}
+const platformsList = getPlatformsList(game);
+console.log(game.name);
+console.log(game.genre);
+console.log(game.platforms);
