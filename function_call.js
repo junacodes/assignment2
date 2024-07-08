@@ -354,7 +354,7 @@ const elementCount = countElement(myArray);
 console.log(elementCount);
 console.log(myArray) 
 
-
+// Q30
 const game= {
     name : 'PUBG',
     genre : 'Battle royal',
